@@ -59,6 +59,7 @@
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,mjs}"
     ],
+    "setupTestFrameworkScriptFile": "<rootDir>/config/jest/jestSetup.js",
     "setupFiles": [
       "<rootDir>/config/polyfills.js"
     ],
@@ -99,8 +100,12 @@
   },
   "devDependencies": {
     "chokidar": "^1.6.1",
+    "enzyme": "3.3.0",
     "npm-run-all": "^4.0.2",
     "prop-types": "^15.6.2",
-    "react-docgen": "^2.14.0"
+    "react-addons-test-utils": "^15.6.2",
+    "react-docgen": "^2.14.0",
+    "react-test-renderer": "^16.4.2",
+    "enzyme-adapter-react-16": "^1.1.1"
   }
 }
