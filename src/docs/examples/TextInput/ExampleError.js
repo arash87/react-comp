@@ -1,5 +1,5 @@
 import React from 'react';
-import TextInput from 'react-comp/TextInput'
+import TextInput from 'react-comp-arash/TextInput'
 
 /** Error TextInput */
 export default class ExampleError extends React.Component{

@@ -1,5 +1,5 @@
 import React from 'react'
-import ProgressBar from 'react-comp/ProgressBar'
+import ProgressBar from 'react-comp-arash/ProgressBar'
 
 /** 20% progress */
 export default function Example20Percent(){

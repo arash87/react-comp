@@ -1,5 +1,5 @@
 import React from 'react';
-import TextInputStyleComponents  from 'react-comp/TextInputStyledComponents'
+import TextInputStyleComponents  from 'react-comp-arash/TextInputStyledComponents'
 
 /** Error TextInput */
 export default class ExampleError extends React.Component{

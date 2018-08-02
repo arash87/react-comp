@@ -1,5 +1,5 @@
 import React from 'react'
-import RegistrationForm from 'react-comp/RegistrationForm'
+import RegistrationForm from 'react-comp-arash/RegistrationForm'
 
 export default class ExampleRegistrationForm extends React.Component {
   onSubmit = (user) => {
