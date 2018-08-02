@@ -1,17 +1,19 @@
 {
   "name": "react-comp-arash-build-template",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "main": "./lib/index.js",
   "private": true,
   "engines": {
-    "node" : ">=4.0.0"
+    "node": ">=4.0.0"
   },
   "author": {
     "name": "Arash Farmani",
-    "email" : "arash_farmani@msn.com",
+    "email": "arash_farmani@msn.com",
     "url": "http://tobe-added-later.com"
   },
-  "files" : ["lib"],
+  "files": [
+    "lib"
+  ],
   "keywords": [
     "components",
     "react",
@@ -31,14 +33,14 @@
     "gen:docs-watch": "npm run gen:docs -- --watch",
     "build:docs": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "build:css" : "cpx \"./src/components/**/*.css\" ./lib",
-    "prebuild:lib" : "rimraf lib",
-    "build:lib" : "npm-run-all --parallel build:commonjs build:css build:copy-files",
+    "build:css": "cpx \"./src/components/**/*.css\" ./lib",
+    "prebuild:lib": "rimraf lib",
+    "build:lib": "npm-run-all --parallel build:commonjs build:css build:copy-files",
     "build:copy-files": "node scripts/copyBuildFiles.js",
     "predeploy:docs": "npm run build:docs",
     "deploy:docs": "gh-pages -d build",
     "build:commonjs": "cross-env NODE_ENV=production babel ./src/components --out-dir ./lib --ignore spec.js",
-    "prepublish" : "npm run build:lib"
+    "prepublish": "npm run build:lib"
   },
   "jest": {
     "collectCoverageFrom": [
