@@ -32,7 +32,7 @@ const Props = ({props}) => {
     )
 }
 
-Props.PropTypes = {
+Props.propTypes = {
     props: PropTypes.object.isRequired
 }
 

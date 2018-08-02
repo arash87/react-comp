@@ -20,7 +20,7 @@ class CodeExample extends React.Component {
     }
 }
 
-CodeExample.PropTypes = {
+CodeExample.propTypes = {
     children: PropTypes.string.isRequired
 }
 

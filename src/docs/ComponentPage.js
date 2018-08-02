@@ -27,7 +27,7 @@ const ComponentPage = ({component}) => {
     )
 }
 
-ComponentPage.PropTypes = {
+ComponentPage.propTypes = {
     component: PropTypes.object.isRequired
 }
 
