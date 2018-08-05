@@ -1,6 +1,6 @@
 {
   "name": "react-comp-arash-build-template",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "main": "./lib/index.js",
   "private": true,
   "engines": {
@@ -42,7 +42,7 @@
     "predeploy:docs": "npm run build:docs",
     "deploy:docs": "gh-pages -d build",
     "build:commonjs": "cross-env NODE_ENV=production babel ./src/components --out-dir ./lib --ignore spec.js && npm run build:utils",
-    "build:utils" : "cross-env NODE_ENV=production babel ./src/utils --out-dir ./lib/utils", 
+    "build:utils": "cross-env NODE_ENV=production babel ./src/utils --out-dir ./lib/utils",
     "prepublish": "npm run build:lib"
   },
   "jest": {
