@@ -41,8 +41,7 @@
     "build:copy-files": "node scripts/copyBuildFiles.js",
     "predeploy:docs": "npm run build:docs",
     "deploy:docs": "gh-pages -d build",
-    "build:commonjs": "cross-env NODE_ENV=production babel ./src/components --out-dir ./lib --ignore spec.js && npm run build:utils",
-    "build:utils": "cross-env NODE_ENV=production babel ./src/utils --out-dir ./lib/utils",
+    "build:commonjs": "cross-env NODE_ENV=production babel ./src/components --out-dir ./lib --ignore spec.js",
     "prepublish": "npm run build:lib"
   },
   "jest": {

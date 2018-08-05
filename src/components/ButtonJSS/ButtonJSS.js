@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Button from '@material-ui/core/Button';
 import injectSheet from 'react-jss/lib/injectSheet'
-import {Theming as theming} from 'utils/themeProvider'
+import {Theming as theming} from '../Utils/Utils'
 
 const styles = theme => ({
     button: {

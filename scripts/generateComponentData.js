@@ -21,7 +21,12 @@ if(enableWatchMode){
 
 function generate(paths) {
     var errors = []
-    var componentData = getDirectories(paths.components).map(function(componentName){
+    var componentData = getDirectories(paths.components)
+    .filter(function(componentName){
+        if(componentName === 'Utils') return false
+        return true
+    })
+    .map(function(componentName){
         try{
             return getComponentData(paths, componentName)
         }catch(error){
